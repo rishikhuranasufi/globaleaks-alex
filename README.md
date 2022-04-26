@@ -11,8 +11,8 @@
 - Update the your Linux workstation , and install the 'tree' and 'unzip' commands using: 
     
     ```
-    $  sudo  apt-get  update  -y  &&  sudo  apt-get  upgrade  -y 
-    $  sudo  apt-get  install  -y  tree  unzip  wget
+    $  sudo apt-get update -y && sudo apt-get upgrade -y 
+    $  sudo apt-get install -y tree unzip wget
     ```
 - Now install terraform using below commands one by one:
     
@@ -23,8 +23,8 @@
     Note: Above command is in one line.
     
     ```
-    $  unzip   terraform_1.1.8_linux_amd64.zip
-    $  sudo  mv  terraform  /usr/local/bin
+    $  unzip terraform_1.1.8_linux_amd64.zip
+    $  sudo mv terraform /usr/local/bin
     ```
     
 - Verify your terraform installation using:
@@ -34,20 +34,21 @@
     
 - Then install AWS CLI using  below commands one by one:
     ```
-    $  curl  "https://awscli.amazonaws.com/awscli-exe-linux-x86_64-2.0.30.zip"  -o "awscliv2.zip"  Note: The above command should be one line.
-    $  unzip  awscliv2.zip
-    $  sudo  ./aws/install
+    $  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64-2.0.30.zip" -o "awscliv2.zip"
+    Note: The above command should be one line.
+    $ unzip awscliv2.zip
+    $ sudo ./aws/install
     ```
     
 - Verify AWS CLI installation: 
     ```
-    $  aws  --version
+    $  aws --version
     ```
     
 - Now configure your username and email address for git on your remote workstation, then check the configuration:  $  git  config  --global  user.name  "Your-Firstname Your-Lastname"
     ```
-    $  git  config  --global  user.email  Your-email@address.com
-    $  git  config  --global  --list
+    $  git config --global user.email Your-email@address.com
+    $  git config --global --list
     ```
 
 - Now also configure the AWS CLI:  $   aws  configure
@@ -61,7 +62,7 @@
     
 - Then edit your aws credentials using:
     ```
-    $   sudo vi ~/.aws/credentials
+    $ sudo vi ~/.aws/credentials
     ```
 
   - Now just copy the whole default credentials and paste it just below it.
@@ -106,7 +107,7 @@
 
 - You can also verify this by SSH into your globaleaks_vm using below command:
     ```
-    $  ssh  –i  ~globaleaks_prject/globaleaks/keys/globaleaks-vm-key   username@globaleaks_vm_IP
+    $  ssh –i ~globaleaks_prject/globaleaks/keys/globaleaks-vm-key username@globaleaks_vm_IP
     ```
     
     NOTE:  Here “globaleaks_prject/globaleaks/keys/globaleaks-vm-key” is the private key path that we have generated in step 10 and “username@globaleaks_vm_IP” is your username and globaleaks_vm  IP address generated  using  terraform in step 12.
