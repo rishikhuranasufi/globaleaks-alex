@@ -72,7 +72,7 @@
 
 - Then make a directory “globaleaks_project” and  clone a globaleaks repo from github to your workstation using:
     ```
-    $   git clone git@github.com:ashisharintech/globaleaks.git
+    $   git clone https://github.com/rishikhuranasufi/globaleaks-alex.git
     ```
     
 - Make a  directory named “keys” inside globaleaks and inside keys directory generate public and private using : 
